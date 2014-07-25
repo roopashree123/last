@@ -46,12 +46,15 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # To use debugger
 # gem 'debugger'
 
-gem 'heroku'
 group :development, :test do
-gem 'sqlite3-ruby', :require => "sqlite3"
+gem 'mysql', :require => "mysql"
 end
 
 group :production do
 gem 'taps'
 gem 'pg'
+gem 'bootstrap-sass', '~> 2.2.1.1'
+gem "carrierwave"
+gem 'geocoder'
+gem 'heroku'
 end
